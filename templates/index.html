@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Слот-машины</title>
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="/static/styles.css">
+  <!-- Манифест PWA -->
+  <link rel="manifest" href="/static/manifest.json">
+  <!-- Мета-теги для PWA -->
+  <meta name="theme-color" content="#01875f">
+  <!-- Подключение шрифта Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <!-- Мета-теги для мобильных устройств -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Метатеги Apple для iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/icons/ico.png">
+
+  <!-- AppsFlyer Web SDK -->
+  <script type="text/javascript" src="https://websdk.appsflyer.com/websdk.min.js"></script>
+</head>
+<body>
+  <!-- Основное содержимое -->
+  <main>
+    <!-- Секция с описанием приложения -->
+    <section class="app-header">
+      <div class="app-icon">
+        <img src="static/icons/ico.png" alt="Иконка приложения">
+      </div>
+      <div class="app-info">
+        <h1>Слот-машины</h1>
+        <div class="app-meta">
+          <span class="developer">Casino Dev</span>
+          <span class="dot">•</span>
+          <span class="category">Казино</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция с рейтингом и информацией -->
+    <section class="app-stats">
+      <div class="stat-item left-item">
+        <div class="stat-value">
+          4.7★
+        </div>
+        <div class="stat-label">Rating</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-item center-item">
+        <div class="stat-value">
+          ⬇
+        </div>
+        <div class="stat-label">5M+</div>
+      </div>
+      <div class="divider"></div>
+      <div class="stat-item right-item">
+        <div class="stat-value age-badge">18+</div>
+        <div class="stat-label">Age</div>
+      </div>
+    </section>
+
+    <!-- Кнопка установки -->
+    <div class="install-button-container">
+      <button id="installButton">Установить</button>
+    </div>
+
+    <!-- Карусель скриншотов -->
+    <section class="screenshots">
+      <div class="screenshot-carousel">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <!-- Скриншоты -->
+            <img src="static/screenshots/jackpot_left.png" alt="Скриншот 1">
+            <img src="static/screenshots/jackpot_center.png" alt="Скриншот 2">
+            <img src="static/screenshots/jackpot_right.png" alt="Скриншот 3">
+          </div>
+        </div>
+        <!-- Кнопки навигации -->
+        <button class="carousel-button prev-button">&#10094;</button>
+        <button class="carousel-button next-button">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Описание приложения -->
+    <section class="app-description">
+      <h2>О приложении</h2>
+      <p>
+        Добро пожаловать в увлекательный мир слот-машин! Испытайте удачу в нашем казино, наслаждайтесь захватывающими играми и выигрывайте крупные джекпоты. Наше приложение предлагает разнообразие слотов с потрясающей графикой и бонусами.
+      </p>
+    </section>
+
+    <!-- Инструкция для установки на iOS -->
+    <div id="iosInstallPrompt" style="display: none;">
+      <p>
+        Чтобы установить это приложение на ваш iPhone, нажмите
+        <span class="share-icon">➚</span>
+        и выберите
+        <strong>"На экран «Домой»"</strong>.
+      </p>
+    </div>
+  </main>
+
+  <!-- Подключение скриптов -->
+  <script src="static/app.js"></script>
+</body>
+</html>
