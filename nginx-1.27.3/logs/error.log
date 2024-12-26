@@ -1,0 +1,22 @@
+2024/12/25 18:10:28 [notice] 24064#17040: signal process started
+2024/12/25 18:10:35 [notice] 13568#25160: signal process started
+2024/12/25 18:13:05 [notice] 23892#7596: signal process started
+2024/12/25 18:24:11 [notice] 14232#6488: signal process started
+2024/12/25 18:25:49 [notice] 15680#10016: signal process started
+2024/12/25 18:26:53 [alert] 3536#21148: worker process 17304 exited with code C0000142
+2024/12/25 18:26:53 [alert] 3536#21148: could not respawn worker
+2024/12/25 18:30:03 [notice] 22720#22724: signal process started
+2024/12/25 18:30:03 [error] 22720#22724: OpenEvent("Global\ngx_reload_3536") failed (2: The system cannot find the file specified)
+2024/12/25 18:37:41 [notice] 23504#22376: signal process started
+2024/12/25 18:37:41 [error] 23504#22376: OpenEvent("Global\ngx_reload_3616") failed (2: The system cannot find the file specified)
+2024/12/25 18:37:43 [notice] 21592#5248: signal process started
+2024/12/25 18:37:43 [error] 21592#5248: OpenEvent("Global\ngx_reload_3616") failed (2: The system cannot find the file specified)
+2024/12/25 18:38:15 [notice] 22888#22592: signal process started
+2024/12/25 18:39:31 [notice] 12604#3752: signal process started
+2024/12/25 18:40:40 [notice] 4336#23468: signal process started
+2024/12/25 18:47:16 [notice] 22064#5416: signal process started
+2024/12/25 19:03:43 [emerg] 22676#3336: cannot load certificate "C:/Users/Gleb/PWA/nginx-1.27.3/origin_combined.pem": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(C:/Users/Gleb/PWA/nginx-1.27.3/origin_combined.pem, r) error:10000080:BIO routines::no such file)
+2024/12/25 19:04:29 [notice] 2104#11936: signal process started
+2024/12/26 15:29:07 [notice] 18456#22700: signal process started
+2024/12/26 15:30:52 [notice] 14948#22760: signal process started
+2024/12/26 15:34:39 [notice] 22968#13216: signal process started

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory, make_response
 import json
 import os
 
@@ -9,6 +9,13 @@ DATA_FILE = "device_data.json"
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
 
 @app.route("/save-device-info", methods=["POST"])
 def save_device_info():
@@ -39,6 +46,10 @@ def save_device_info():
         return jsonify({"message": "Данные успешно сохранены"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory('static', filename)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
